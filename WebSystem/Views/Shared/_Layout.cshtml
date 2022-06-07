@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9Toc.com</title>
+    <link rel="icon" href="./static/v4/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./static/v4/css/public.css">
+    <link rel="stylesheet" href="./static/v4/css/index.css">
+    <script src="./static/v4/js/jquery.min.js"></script>
+    @RenderSection("header", required:false)
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-con">
+            <img class="logo" src="./static/v4/images/logo.png" width="10%" />
+            <img class="logo_infro" src="./static/v4/images/logo_infro.png" width="15%" />
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="./">首页</a><div></div></li>
+                <li class="nav_li"><a href="About">关于XXX</a><div></div></li>
+                <li class="nav_li"><a href="Game">XXX游戏</a><div></div></li>
+                <li class="nav_li"><a href="Work">商务合作</a><div></div></li>
+                <li class="nav_li"><a href="Contact">联系我们</a><div></div></li>
+            </ul>
+        </div>
+    </div>
+    
+    @RenderBody();
+    <div class="footer">
+        <div class="footer_con">
+            <div class="foote_logo">
+                <img src="./static/v4/images/logo.png">
+            </div>
+            <div class="footer_font">
+                <ul>
+                    <li><a href="About" target="_blank">关于XXX </a><span class="np">|</span> 
+                    <a href="" target="_blank"></a>服务条款<span class="np">|</span> 
+                    <a href="Work" target="_blank">商务合作</a><span class="np">|</span>
+                    <a href="Contact" target="_blank">联系我们</a></li>
+                    <li><a href="http://sky.XXX.com/news/2015/0211/1190.html" target="_blank">《网络游戏管理暂行办法》</a>&nbsp;
+                    <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/gameNetTag/386615A1709B41BF989E35C4D54E9522" target="_blank"><img src="./static/v4/images/wen2.png" /></a> &nbsp;
+                    <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/gameNetTag/4028c08b525431c6015281d9acbd4cb9" target="_blank">文网游备字XXX</a></li>
+                    <li>广州XXX信息科技有限公司 版权所有 粤网文 XXX 粤ICP备XXX</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <style>
+        .copyrights {
+            text-indent: -9999px;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+    </style>
+    <div class="copyrights" id="links20210126">
+        Collect from <a href="http://www.cssmoban.com/" title="网站模板">模板之家</a>
+        <a href="http://cooco.net.cn/" title="组卷网">组卷网</a>
+    </div>
+</body>
+</html>
+@RenderSection("Scripts",required:false)
